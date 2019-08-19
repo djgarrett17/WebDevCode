@@ -1,0 +1,140 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  
+}
+.pagecontainer{
+    background-image: url(./DevinImages/potentialbg1.jpg);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+
+    "a a a a a a"
+    "a a a a a a"
+    "c e e e e d"
+    "c e e e e d"
+    "g b b b b d"
+    "g f f f f d";
+
+      
+}
+
+.worktitle{
+    grid-area: a;
+    justify-self: center;
+    font-size: 30px;
+    /* color: rgb(243, 138, 0); */
+    color: whitesmoke;
+    font-family: 'Bad Script', cursive;
+    
+}
+
+.scroll {
+  
+    /* padding: 20px; */
+    display: grid;
+    /* position: relative; */
+    grid-template-rows: 0;
+    grid-area: e;
+    width: 80%;
+    height: 90%;
+    overflow: scroll;
+    justify-self: center;
+    /* align-self: flex-start; */
+    background: rgba(61, 59, 59, 0.322);
+    /* border-radius: 20px 20px 20px 20px; */
+  }
+
+  .scrolltitle {
+    /* position: absolute; */
+    margin: 0 0 4px 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 80%;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Bad Script', cursive;
+  }
+  .work {
+    /* grid-area: b; */
+    bottom: 100px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-self: center;
+    /* justify-content: space-around; */
+    padding: 0;
+  }
+  .workBtn {
+    height: 160px;
+    width: 160px;
+  }
+  .item {
+    /* background: rgba(219, 195, 195, 0.397); */
+    margin: 0px;
+    color: whitesmoke;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Bad Script', cursive;
+    font-size: 60%;
+    /* color: whitesmoke; */
+    padding: 10px;
+    text-align: center;
+  }
+  .item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+/* navgrid */
+.navgrid{
+    background-color: rgba(0, 0, 0, 0.3);
+
+    /* border: 1px solid black; */
+    
+    grid-area: c;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 0 40px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* .instabutton{
+    position: absolute;
+} */
+
+.navgrid ul{
+    list-style: none;
+    
+}
+
+.navgroup a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+}
+
+#home{
+    padding: 10px 10px 10px 40px;
+}
+
+#about{
+    padding: 10px 10px 10px 40px;
+}
+
+#work{
+    padding: 10px 10px 0 40px;
+}
+
+/* #insta1{
+    padding: 0 0 0 10px;
+    width: 50px;
+    height: 50px;
+} */
+
+
+
