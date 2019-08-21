@@ -1,0 +1,240 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  
+}
+.pagecontainer{
+    background-image: url(./DevinImages/potentialbg2.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+
+    "a a a a a a"
+    "a a a a a a"
+    "c b b b b d"
+    "c b b b b d"
+    "e b b b b f"
+    "e b b b b f";
+      
+}
+
+.abouttitle{
+    grid-area: a;
+    justify-self: center;
+    /* color: rgb(255, 197, 37); */
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Bad Script', cursive;
+}
+
+.clickdiv{
+    /* grid-area: b;
+    justify-self: center; */
+    position: absolute;
+    margin-top: 310px;
+}
+.clickhere{
+    font-family: 'Bad Script', cursive;
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+
+.aboutcontainer{
+    grid-area: b;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 80%;
+    /* margin: 0 30px 0 30px; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+
+    "a d d b"
+    "a p p b"
+    "a p p b"
+    "a c c b";
+    /* box-shadow: 0 0 40px 15px rgba(255, 255, 255, 0.3); */
+    justify-self: center;
+    border-radius: 3px;
+}
+
+.aboutmeheader{
+    grid-area: d;
+    justify-self: center;
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    
+}
+
+.closex{
+    justify-self: end;
+    grid-area: b;
+    align-self: start;
+    font-size: 20px;
+    padding-right: 5px;
+    color: whitesmoke;
+}
+.closex:hover{
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
+.profilepic{
+    grid-area: p;
+    width: 240px;
+    height: 250px;
+    justify-self: center;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.storycontainer{
+    grid-area: a;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+
+    "a"
+    "b"
+    "b"
+    "b"
+    "b";
+    
+
+}
+
+.mystory{
+    grid-area: a;
+    /* padding: 30px 0px 10px 20px; */
+    color: whitesmoke;
+    font-family: 'Satisfy', cursive;
+    font-size: 26px;
+    justify-self: center;
+    align-self: end;
+    padding-left: 20px;
+    
+
+
+}
+
+.thestory{
+    grid-area: b;
+    margin: 17px 0px 5px 5px;
+    padding: 10px 0px 5px 10px;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+    /* word-spacing: 1px; */
+    color: whitesmoke;
+    text-align: center;
+    justify-self: center;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+
+.languagescontainer{
+    grid-area: b;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+
+    "a"
+    "b"
+    "b"
+    "b"
+    "b";
+}
+
+.languagestitle{
+    grid-area: a;
+    /* padding: 30px 20px 10px 10px; */
+    color: whitesmoke;
+    font-family: 'Satisfy', cursive;
+    font-size: 26px;
+    justify-self: center;
+    align-self: end;
+    padding-right: 8%;
+
+}
+
+.thelanguages{
+    /* color: whitesmoke; */
+    grid-area: b;
+    list-style: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 0px 0px 0px 0px;
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    justify-self: start;
+    
+}
+
+hr {
+    width: 60%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid whitesmoke;
+    margin: 30px 0 30px 28px;
+    padding: 0;
+}
+
+
+.navgrid{
+    /* box-shadow: 0px 0px 50px 15px; */
+    grid-area: c;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* border: 1px solid black; */
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 0 40px 15px rgba(255, 255, 255, 0.3);
+}
+
+.instabutton{
+    grid-area: c;
+    justify-self: center;
+    align-self: center;
+}
+
+.navgrid ul{
+    list-style: none;
+}
+
+.navgroup a{
+    text-decoration: none;
+    color: whitesmoke;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Bad Script', cursive;
+    /* letter-spacing: 2px; */
+    font-size: 30px;
+}
+
+#home{
+    padding: 10px 10px 10px 40px;
+}
+
+#about{
+    padding: 10px 10px 10px 40px;
+}
+
+#work{
+    padding: 10px 10px 0 40px;
+}
+
+#insta1{
+    /* padding: 10% 0 0 83%; */
+    width: 50px;
+    height: 50px;
+}    
+
